@@ -506,14 +506,15 @@
   }
 
   /* ── FEATURES ── */
-  #features {
+  #features-wrapper {
+    position: relative;
+    z-index: 1;
     background: rgba(255,255,255,0.015);
-    max-width: 100%;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
 
-  #features > .inner {
+  #features-wrapper > .inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 60px;
@@ -858,7 +859,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#features">Features</a></li>
+    <li><a href="#features-wrapper">Features</a></li>
     <li><a href="#privacy">Privacy</a></li>
     <li><a href="#funding">Funding</a></li>
     <li><a href="#contact" class="nav-cta">Request Demo</a></li>
@@ -905,5 +906,4 @@
         </div>
 
         <div class="mock-alert">
-          <span class="alert-icon">🟢</span>
-          <div class="alert-
+          <span class="alert-i
